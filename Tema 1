@@ -1,0 +1,19 @@
+#include<iostream>
+int main ()
+{int x=34;
+int y;
+bool repeat=true;
+while (repeat)
+{std::cin>>y;
+if (y<x)
+{std::cout<<"Caut un numar mai mare";
+}
+else if (y>x)
+{std::cout<<Caut un numar mai mic";
+}
+else
+{std::cout<<"Corect!";
+repeat=false;
+}
+}
+}
