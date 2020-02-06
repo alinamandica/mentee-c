@@ -1,0 +1,60 @@
+#include <iostream>
+
+using namespace std;
+
+class Matematica {
+    public:
+    int x,y,sum,dif, inm;
+    float div;
+    void adunare ()
+    {
+        cout<<"Rezultatul adunarii este sum = ";
+        
+    }   
+    void scadere ()
+    {
+        cout<<"Rezultatul scaderii este dif = ";
+    }
+    void inmultire ()
+    {
+        cout<<"Rezultatul inmultirii este inm = ";
+    }
+    void impartire ()
+    {
+        cout<<"Rezultatul impartirii este div = ";
+    }
+    
+};
+
+int main()
+{
+    int x,y;
+    cout<<"numarul x=";cin>>x;
+    cout<<endl;
+    cout<<"numarul y=";cin>>y;
+    cout<<endl;
+    Matematica Operatie;
+    Operatie.adunare();
+    {
+        cout<<x+y;
+        cout<<endl;
+    }
+    Operatie.scadere();
+    {
+        cout<<x-y;
+        cout<<endl;
+    }
+    Operatie.inmultire();
+    {
+        cout<<x*y;
+        cout<<endl;
+    }
+    Operatie.impartire();
+    {
+        if (y>0) cout<<x/y;
+        else cout<<"erorr - impartirea nu este posibila";
+    }
+    
+
+    return 0;
+}
